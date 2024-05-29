@@ -1,0 +1,151 @@
+.menu{
+    float: right;
+    transition: max-height 1ex ease-out;
+    opacity: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+.list{
+    float: left;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+a:hover{
+    font-size: larger;
+    color: blue;
+}
+
+.tool{
+    display: block;
+    border: 3px solid black; 
+    border-radius: 100%;
+    width: 20px;
+    height: 3px;
+}
+.line{
+    overflow: hidden;
+    float: right;
+    display: none;
+  
+}
+.list{
+    margin-right: 20px;
+}
+.list:hover{
+    background-color: bisque;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: gray;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.myImage{
+    border: 2px solid white; 
+    max-width: 550px;
+    height: 200px;
+    background-image: none;
+    background-color: aliceblue;
+}
+#Education h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Experience h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Intro h2{
+    /* text-align: center; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.end{
+    border-top: 1px solid black;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+
+    font-weight: 100;
+    text-align: center;
+}
+
+.Education {
+    display: none;
+}
+
+.Experience {
+    display: none;
+}
+
+.Experiences{
+    border: 2px solid white; 
+    max-width: 900px;
+    height: 600px;
+    background-image: none;
+    background-color: aliceblue;
+    /* transition: width 5s; */
+}
+
+body p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .Experiences:hover{
+    width: 500px;
+} */
+
+@media screen and (max-width: 950px) {
+    .line{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;   
+        transition: max-height 1s ease-out;
+    }
+  
+    .menu{
+        display: none;
+        width: 100%;
+        max-height: 0px;
+        transition: max-height 1s ease-out;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .Thing-to-know {
+        text-align: center;    
+    }
+
+    .list {
+        width: 100px;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: gray;
+    }
+
+    .menu.active{
+        display: block;
+        position: absolute;
+        top: 50px;
+        padding: 0px;
+        max-height: 0px;
+        transition: max-height 1ex ease-out;
+
+    }
+    .b5{
+        position: relative;
+
+    }
+    body{background-color: whitesmoke;}
+}
+
+
+/* @media screen {
+    body{background-color: aquamarine;}
+} */
